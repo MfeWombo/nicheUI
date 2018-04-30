@@ -324,7 +324,7 @@ document.getElementById("buttonSignin").addEventListener("click", function (even
             }
             console.log(formdata);
 
-            postData("https://niche-vendo|r.herokuapp.com/login", formdata)
+            postData("https://niche-vendor.herokuapp.com/login", formdata)
                 .then(data => {
                     console.log(data)
                     document.getElementById("buttonSignin").innerHTML = "success";
