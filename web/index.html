@@ -44,11 +44,11 @@
                 <h3>Log In</h3>
                 <div class="fields">
                     <img src="./img/email.png" alt="">
-                    <input type="email" id="InputEmail" placeholder="Email Address">
+                    <input type="email" id="Email" placeholder="Email Address">
                 </div>
                 <div class="fields">
                     <img src="./img/lock.png" alt="">
-                    <input type="password" id="InputPassword" placeholder="Password">
+                    <input type="password" id="Password" placeholder="Password">
                 </div>
                 <p><a id="forgotPass" href="#id03">Forgot password? Click here</a>.</p>
                 <input class="modSign" id="buttonSignin" type="submit" value="LOG IN">
@@ -102,7 +102,7 @@
                 <input class="modSign" id="mVendor" type="submit" value="JOIN Now">
                 <hr>
                 <h4>Enjoy Our Services</h4>
-                <a id="toLogIn" href="./dashboard.html">Dashboard</a>
+                <!--<a id="toLogIn" href="./dashboard.html">Dashboard</a>-->
             </div>
 
         </div>
@@ -318,8 +318,8 @@ document.getElementById("buttonSignin").addEventListener("click", function (even
             event.preventDefault();
             document.getElementById("buttonSignin").innerHTML = "signing you in...";
             var formdata = {
-                email: document.getElementById("InputEmail").value,
-                password: document.getElementById("InputPassword").value,
+                email: document.getElementById("Email").value,
+                password: document.getElementById("Password").value,
 
             }
             console.log(formdata);
@@ -339,7 +339,7 @@ document.getElementById("buttonSignin").addEventListener("click", function (even
                         window.location.replace("courier.html");
                     }
                     else if (data.status == 200) {
-                        window.location.replace("visitor.html");
+                        window.location.replace("dashboard.html");
                     }
 
                     else if (data.status >= 400) {
