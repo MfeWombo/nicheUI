@@ -330,7 +330,7 @@ document.getElementById("buttonSignin").addEventListener("click", function (even
                     document.getElementById("buttonSignin").innerHTML = "success";
 
                     if (data.status == 201) {
-                        window.location.replace("costmer.html");
+                        window.location.replace("custmer.html");
                     }
                     else if (data.status == 202) {
                         window.location.replace("vendor.html");
@@ -339,7 +339,7 @@ document.getElementById("buttonSignin").addEventListener("click", function (even
                         window.location.replace("courier.html");
                     }
                     else if (data.status == 200) {
-                        window.location.replace("dashboard.html");
+                        window.location.replace("vistors.html");
                     }
 
                     else if (data.status >= 400) {
@@ -394,7 +394,7 @@ document.getElementById("buttonSignin").addEventListener("click", function (even
                     document.getElementById("mVendor").innerHTML = "success";
                     if (data.status == 200) {
                         alert("Profile successfully Updated")
-                        window.location.replace("dashboard.html");
+                        window.location.replace("vendor.html");
                     }
                     else if (data.status >= 400) {
                         alert("failed to complete, Please Try Again");
